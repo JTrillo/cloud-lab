@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+script:
+  - docker build -t lab_app .
+after_success:
+  - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+  - docker tag lab_app $DOCKER_USER/masterlemon7-cloud-lab
+  - docker push $DOCKER_USER/masterlemon7-cloud-lab
+
