@@ -4,7 +4,7 @@
 
 **Docker Image** --> https://hub.docker.com/r/jtrillo/masterlemon7-cloud-lab
 
-**AWS Instance** --> http://ec2-34-245-33-253.eu-west-1.compute.amazonaws.com/
+**AWS Instance** --> Práctica ya evaluada. Instancia eliminada.
 ## Preparación
 
 * Cuenta de [Docker Hub](https://hub.docker.com/)
@@ -67,5 +67,4 @@ terraform plan
 terraform apply
 ```
 
-Para probar el correcto funcionamiento de esta práctica haz click [aquí](http://ec2-34-245-33-253.eu-west-1.compute.amazonaws.com/Gonzalo).
-
+Para eliminar los recursos creados previamente basta con ejecutar el comando `terraform destroy`.
